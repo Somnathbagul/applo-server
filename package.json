@@ -1,0 +1,24 @@
+{
+  "name": "apollo-book-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "json-server --port=5000 db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "axios": "^1.4.0",
+    "graphql": "^16.6.0",
+    "json-server": "^0.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
