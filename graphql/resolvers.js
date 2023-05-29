@@ -1,16 +1,27 @@
-import books from './data/books.js';
-import authors from './data/authors.js';
-import {getPosts} from './services/author-service.js';
+//import books from './data/books.js';
+//import authors from './data/authors.js';
+import {getAllAuthors, getAuthorById} from './services/author-service.js';
+import {getAllBooks,getBookById, deleteBookById} from './services/book-service.js';
 const resolvers={
 
     Query:{
-        books: ()=>{  return books;   },
-        book: (_, args)=>{  return books.find((book) => book.id === args.id );} ,
+
+        books: ()=>{  return getAllBooks();   },
+        book: (_, args)=>{
+              return getBookById(args.id);
+        } ,
+        deleteBook:(_, args)=>{
+           return deleteBookById(args.id);
+        },
         recommendedBooks: ()=>{  return books[0];     },
         authors: ()=>{
-            getPosts(); 
-            return authors },
-        author(_, args){ return {id:args.id};  }
+           return getAllAuthors(); 
+           
+         },
+        author:(_, args)=>{
+             return  getAuthorById(args.id);
+        }
+
 
     },
 

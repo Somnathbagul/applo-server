@@ -16,6 +16,7 @@ type Book{
     title:String!,
     description:String!,
     coverPhto:String!,
+    authorId:String!,
     author:Author!,
     rating:Float!,
     tags:[String],
@@ -25,6 +26,7 @@ type Book{
 type Query{
     books: [Book],
     book(id:String):Book,
+    deleteBook(id:String):Book,
     recommendedBooks: Book,
     authors: [Author],
     author(id:String):Author
@@ -32,8 +34,7 @@ type Query{
 
 type Mutation{
     addAuthor(id:String!, name:String!, biography:String!, photo:String, tags:[String]=[]): Author,
-    addBook(id:String!, title:String!, description:String!, 
-    coverPhoto:String, tags:[String]=[], price:Int!, rating:Float=5): Book,
+    addBook(id:String!, title:String!, authorId:String!, price:Int!, rating:Float=5, description:String!, coverPhoto:String, tags:[String]=[]): Book,
 }
 
 `;

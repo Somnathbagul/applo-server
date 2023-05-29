@@ -1,19 +1,133 @@
 {
-  "posts": [
+  "books": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": "the-accursed-god",
+      "title": "The Accursed God",
+      "authorId": "vivek",
+      "price": 299,
+      "rating": 4.6,
+      "description": "An Amazon best seller epic fiction based on Mahabharata"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "rashmirathi",
+      "title": "Rashmirathi",
+      "authorId": "dinkar",
+      "price": 119,
+      "rating": 4.8,
+      "description": "A poetic tale of Karna of Mahabahrata"
+    },
+    {
+      "id": "a-tale-of-two-cities",
+      "title": "A Tale of Two Cities",
+      "authorId": "dickens",
+      "price": 151,
+      "rating": 4.3,
+      "description": "A classic period drama set in London and Paris"
+    },
+    {
+      "id": "manas",
+      "title": "Manas",
+      "authorId": "vivek",
+      "price": 202,
+      "rating": 4.5,
+      "description": "A Poetic tale related to aftermath of Mahabharata"
+    },
+    {
+      "id": "the-count-of-monteo-cristo",
+      "title": "The Count of Monte Cristo",
+      "authorId": "dumas",
+      "price": 499,
+      "rating": 4.9,
+      "description": "Timeless classic tale"
+    },
+    {
+      "id": "to-kill-a-mockingbird",
+      "title": "To Kill a Mockingbird",
+      "authorId": "lee",
+      "price": 399,
+      "rating": 4.8,
+      "description": "Powerful story of racial injustice"
+    },
+    {
+      "id": "pride-and-prejudice",
+      "title": "Pride and Prejudice",
+      "authorId": "austen",
+      "price": 299,
+      "rating": 4.7,
+      "description": "Romantic novel exploring social standing"
+    },
+    {
+      "id": "1984",
+      "title": "1984",
+      "authorId": "orwell",
+      "price": 349,
+      "rating": 4.6,
+      "description": "Dystopian novel depicting totalitarianism"
+    },
+    {
+      "id": "the-hobbit",
+      "title": "The Hobbit",
+      "authorId": "tolkien",
+      "price": 399,
+      "rating": 4.8,
+      "description": "Fantasy adventure set in Middle-earth"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+],
+  "authors": [
+    {
+      "id": "vivek",
+      "name": "Vivek Dutta Mishra",
+      "biography": "Vivek Dutta Mishra is a renowned author known for his captivating storytelling."
+    },
+    {
+      "id": "dinkar",
+      "name": "Ramdhari Singh Dinkar",
+      "biography": "Ramdhari Singh Dinkar is an accomplished writer with a passion for exploring complex themes."
+    },
+    {
+      "id": "dickens",
+      "name": "Charles Dickens",
+      "biography": "Charles Dickens is a best-selling author who has received critical acclaim for his novels."
+    },
+    {
+      "id": "dumas",
+      "name": "Alexandre Dumas",
+      "biography": "Alexandre Dumas is a prolific author with a knack for creating memorable characters."
+    },
+    {
+      "id": "lee",
+      "name": "Harper Lee",
+      "biography": "Harper Lee is an award-winning writer known for his thought-provoking narratives."
+    },
+    {
+      "id": "orwell",
+      "name": "George Orwell",
+      "biography": "George Orwell is an emerging author with a unique voice and fresh perspectives."
+    },
+    {
+      "id": "tolkien",
+      "name": "J.R.R. Tolkien",
+      "biography": "J.R.R. Tolkien is a versatile author who excels in various genres, including mystery and science fiction."
+    },
+    {
+      "id": "roberts",
+      "name": "Rachel Roberts",
+      "biography": "Rachel Roberts is a celebrated novelist recognized for her lyrical prose and emotional depth."
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel Lee",
+      "biography": "Daniel Lee is a talented writer who expertly combines suspense and romance in his novels."
+    },
+    {
+      "id": "adams",
+      "name": "Sophia Adams",
+      "biography": "Sophia Adams is a rising star in the literary world, captivating readers with her compelling stories."
+    },
+    {
+      "id": "austen",
+      "name": "Jane Austen",
+      "biography": "Jane Austen is a Romantic novel exploring social standing."
+    }
+  ]
 }

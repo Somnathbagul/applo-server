@@ -1,9 +1,18 @@
 import axios from 'axios';
 
-const baseRESTUrl='http://localhost:5000/posts';
+const baseRESTUrl='http://localhost:5000/authors';
 
-export function getPosts(){
+export async function getAllAuthors(){
+    var response = await axios.get(baseRESTUrl);
+   // console.log('response.status', response.status);
+    return response.data;
+}
 
-    axios.get(baseRESTUrl)
-    .then(response => console.log('total no of posts : ', response.data.length));
+export async function getAuthorById(id){
+    const url=`http://localhost:5000/authors/${id}`;
+
+    var response = await axios.get(url);
+    //console.log('response.status', response.status);
+    return response.data;
+
 }
