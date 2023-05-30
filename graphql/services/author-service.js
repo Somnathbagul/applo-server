@@ -16,3 +16,39 @@ export async function getAuthorById(id){
     return response.data;
 
 }
+
+
+
+export async function deleteAuthorDetails(id){
+    const url=`http://localhost:5000/authors/${id}`;
+    var response = await axios.delete(url);
+    return response.data.message("authordetails deleted");
+}
+
+export async function addAuthorDetails(id, name, biography){
+    const url=`http://localhost:5000/authors`;
+
+    var response = await axios.post(url, { 
+        id:id, 
+        name:name,
+        biography:biography
+    });
+    return response.data;
+
+}
+
+export async function updateAuthorDetails(id, name, biography){
+    const url = 'http://localhost:5000/authors'; 
+    try {
+      const response = await axios.patch(url, {
+        id: id,
+        name: name,
+        biography: biography
+      });
+  
+      console.log('Author details updated successfully:', response.data);
+      return response.data;
+    } catch (error) {
+      console.error('Error updating author details:', error.message);
+    }
+  }

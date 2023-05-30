@@ -1,5 +1,3 @@
-
-
 const schema=`#graphql
 
 type Author{
@@ -29,11 +27,13 @@ type Query{
     deleteBook(id:String):Book,
     recommendedBooks: Book,
     authors: [Author],
-    author(id:String):Author
+    author(id:String):Author,
 }
 
 type Mutation{
     addAuthor(id:String!, name:String!, biography:String!, photo:String, tags:[String]=[]): Author,
+    updateAuthor(id:String!, name:String!, biography:String!, photo:String, tags:[String]=[]): Author,
+    deleteAuthor(id:String!):String,
     addBook(id:String!, title:String!, authorId:String!, price:Int!, rating:Float=5, description:String!, coverPhoto:String, tags:[String]=[]): Book,
 }
 

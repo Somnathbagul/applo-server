@@ -72,7 +72,7 @@
       "rating": 4.8,
       "description": "Fantasy adventure set in Middle-earth"
     }
-],
+  ],
   "authors": [
     {
       "id": "vivek",
@@ -128,6 +128,23 @@
       "id": "austen",
       "name": "Jane Austen",
       "biography": "Jane Austen is a Romantic novel exploring social standing."
+    },
+    {
+      "id": "bagul",
+      "name": "Somnath Bagul",
+      "biography": "Somnath Bagul is an accomplished writer with a passion for exploring complex themes."
+    },
+    {
+      "id": "sonar",
+      "name": "Rahul Sonar"
+    },
+    {
+      "id": "shastri",
+      "name": "Rahul Shastri"
+    },
+    {
+      "id": "sonali",
+      "name": "sonali"
     }
   ]
 }
